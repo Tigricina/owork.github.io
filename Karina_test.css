@@ -65,12 +65,7 @@ body, html {
     color: #000000;
     margin: 0 0 0 58% 
 }
-.input_eye {
-    z-index: 9999;
-    margin: -10% 0 5% 95%;
-    
-    
-}
+
 .password_recovery {
     width: 111px;
     height: 20px;
@@ -79,7 +74,7 @@ body, html {
     color: #4CA9DF;
     display: block;
     text-align:right;
-    margin: 0 0 0 75% 
+    
 }
 
 @media (max-width: 1500px) {
@@ -101,7 +96,7 @@ body, html {
 .logo {
     margin:0 79px;
 }
-.authorization_form_label {
+.authorization_form_text {
 width: 327px;
 height: 32px;
 left: calc(50% - 327px/2 - 36.5px);
@@ -118,20 +113,41 @@ margin: 8px 0;
     left: calc(50% - 400px/2);
     margin: 8px 0;
 }
+.input_eye {
+    z-index: 9999;
+    margin: -10% 0 5% 95%;
+}
+.password_recovery {
+    margin: 0 0 0 75% 
+}
 }
 @media (max-width: 992px) {
     .wrapper{
         padding: 33.3% 33.3%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
     }
     .authorization__form {
-        width: 33.3%;
-        height: 33.3%;
+        
         padding: 49px;
-        left: calc(50% - 480px/2);
-        top: calc(50% - 504px/2 + 2px);
+       
      }
      .logo {
-        margin: 0 0;
+        margin: 0 80px;
+    }
+    .authorization__input {
+        width: 380px;
+        height: 65px;
+    }
+    .input_eye {
+        z-index: 9999;
+        margin: -10% 0 5% 90%;
+    }
+    .password_recovery {
+        margin: 0 0 0 70% 
+    }
+    .signin {
+        margin: 32px auto auto;
     }
 }
 @media (max-width: 800px) {
@@ -141,7 +157,28 @@ margin: 8px 0;
     .authorization__form {
         width: 320px;
         height: 536px;
-        left: calc(50% - 320px/2);
-        top: calc(50% - 536px/2 - 4px);
+        padding: 49px 20px;
     }    
+    .logo {
+        margin: 0 30px;
+    }
+    .authorization_form_text {
+        width: 280px;
+        height: 64px;
+        left: 0;
+        top: 209px;
+        text-align: left; 
+    }
+    .authorization__input {
+        width: 280px;
+height: 65px;
+    }
+    .input_eye {
+        z-index: 9999;
+        margin: -15% 0 5% 85%;
+    }
+    .password_recovery {
+        margin: 0 0 0 60% 
+    }
     } 
+    
